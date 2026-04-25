@@ -1,0 +1,24 @@
+# Environnement virtuel
+venv/
+env/
+
+# Données CICIDS2017 (trop lourdes pour GitHub)
+data/
+
+# Modèles sauvegardés (trop lourds)
+models/*.pkl
+
+# Résultats générés
+results/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VSCode
+.vscode/
+
+# OS Windows
+Thumbs.db
+desktop.ini
