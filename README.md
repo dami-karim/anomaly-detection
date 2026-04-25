@@ -48,30 +48,32 @@ Le système est déployé sous forme d'une **API REST FastAPI** et d'un
 ---
 
 ## Architecture
+'''
 ┌─────────────────────────────────────────────┐
 │  Dashboard Streamlit — 5 onglets            │
 │  Simulation | CSV | Résultats | SHAP | Info │
 └──────────────────┬──────────────────────────┘
-│ HTTP REST
+                   │ HTTP REST
 ┌──────────────────▼──────────────────────────┐
 │  API FastAPI — localhost:8000               │
 │  /predict  /predict/batch  /stats  /ws/live │
 └──────────────────┬──────────────────────────┘
-│
+                   │
 ┌──────────────────▼──────────────────────────┐
 │  Moteur ML                                  │
 │  Random Forest (150 arbres, supervisé)      │
 │  Isolation Forest (200 arbres, non supervisé│
 │  StandardScaler — normalisation             │
 └──────────────────┬──────────────────────────┘
-│
+                   │
 ┌──────────────────▼──────────────────────────┐
-│  CICIDS2017 — 8 fichiers CSV — 2.8M flux   │
+│  CICIDS2017 — 8 fichiers CSV — 2.8M flux    │
 └─────────────────────────────────────────────┘
-
+'''
 ---
 
 ## Structure du projet
+'''
 anomaly-detection-pfa/
 │
 ├── dashboard/
@@ -95,6 +97,7 @@ anomaly-detection-pfa/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+'''
 ---
 
 ## Dataset
