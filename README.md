@@ -48,7 +48,7 @@ Le système est déployé sous forme d'une **API REST FastAPI** et d'un
 ---
 
 ## Architecture
-'''
+```
 ┌─────────────────────────────────────────────┐
 │  Dashboard Streamlit — 5 onglets            │
 │  Simulation | CSV | Résultats | SHAP | Info │
@@ -69,11 +69,11 @@ Le système est déployé sous forme d'une **API REST FastAPI** et d'un
 ┌──────────────────▼──────────────────────────┐
 │  CICIDS2017 — 8 fichiers CSV — 2.8M flux    │
 └─────────────────────────────────────────────┘
-'''
+```
 ---
 
 ## Structure du projet
-'''
+```
 anomaly-detection-pfa/
 │
 ├── dashboard/
@@ -97,7 +97,7 @@ anomaly-detection-pfa/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-'''
+```
 ---
 
 ## Dataset
